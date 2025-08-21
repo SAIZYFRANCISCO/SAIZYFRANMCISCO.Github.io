@@ -638,10 +638,7 @@ WEBSILL Solutions - Loja Virtual
                                 <i class="fas fa-mobile-alt" title="e-Mola"></i>
                                 <i class="fas fa-university" title="Transferência Bancária"></i>
                             </div>
-                            <a href="https://emola.co.mz/pagar?phone=841234567&amount=500&note=Loja+Online" 
-   style="background:#6e0b9c; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
-   Pagar com e-Mola
-</a>
+                            <a href="https://emola.gov.mz" class="emola-link" target="_blank">e-Mola: 861492524</a>
                         </div>
                     </div>
                 </div>
@@ -664,7 +661,10 @@ WEBSILL Solutions - Loja Virtual
                                 <i class="fas fa-mobile-alt" title="e-Mola"></i>
                                 <i class="fas fa-university" title="Transferência Bancária"></i>
                             </div>
-	
+                            <a href="https://emola.gov.mz" class="emola-link" target="_blank">e-Mola: 861492524</a>
+                        </div>
+                    </div>
+                </div>
                 
                 <!-- Serviço 4 -->
                 <div class="service-card">
@@ -701,9 +701,13 @@ WEBSILL Solutions - Loja Virtual
                         <a href="https://wa.me/258845189963?text=Estou%20interessado%20no%20serviço%20de%20Redes%20e%20Segurança" class="btn btn-accent">Encomendar</a>
                         
                         <div class="payment-methods">
-               <a href="https://emola.co.mz/pagar?phone=841234567&amount=500&note=Loja+Online" target="_blank">
-   <button>Pagar com e-Mola</button>
-</a>
+                            <p>Métodos de pagamento:</p>
+                            <div class="payment-icons">
+                                <i class="fas fa-money-bill-wave" title="Dinheiro"></i>
+                                <i class="fas fa-mobile-alt" title="e-Mola"></i>
+                                <i class="fas fa-university" title="Transferência Bancária"></i>
+                            </div>
+                            <a href="https://emola.gov.mz" class="emola-link" target="_blank">e-Mola: 861492524</a>
                         </div>
                     </div>
                 </div>
@@ -835,16 +839,15 @@ WEBSILL Solutions - Loja Virtual
                         <div class="preview-images" id="preview-images"></div>
                     </div>
                     
-<button onclick="pagarEmola()">Pagar com e-Mola</button>  
-
-<script>  
-function pagarEmola() {  
-  const numero = "84SEUNUMERO";  // *SUBSTITUA pelo seu nº e-Mola!*  
-  const valor = "500";           // Valor em MZN  
-  const descricao = "Compra";    // Descrição (use + para espaços)  
-  window.open(https://emola.co.mz/pagar?phone=${numero}&amount=${valor}¬e=${descricao}, "_blank");  
-}  
-</script>
+                    <div class="form-group">
+                        <label for="payment">Método de Pagamento Preferido</label>
+                        <select id="payment" class="form-control" required>
+                            <option value="">Selecione...</option>
+                            <option value="e-Mola">e-Mola (861492524)</option>
+                            <option value="Transferência Bancária">Transferência Bancária</option>
+                            <option value="Dinheiro">Dinheiro</option>
+                        </select>
+                    </div>
                     
                     <button type="submit" class="btn btn-accent" style="width: 100%;">Enviar Encomenda</button>
                 </form>
